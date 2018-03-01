@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{262DD43A-11EB-4EB4-85BA-C338B235334C}</ProjectGuid>
+    <ProjectGuid>{C9FA0AF3-1EC7-4315-A2B8-29B98FCF1F02}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SQAssign1</RootNamespace>
-    <AssemblyName>SQAssign1</AssemblyName>
+    <RootNamespace>SQAssign1.tests</RootNamespace>
+    <AssemblyName>SQAssign1.tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -33,15 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="black.core, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FitNesseBlack.1.0.1\lib\black.core.dll</HintPath>
-    </Reference>
-    <Reference Include="fit, Version=2.6.6621.26673, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FitSharp.2.6.1\lib\net452\fit.dll</HintPath>
-    </Reference>
-    <Reference Include="fitSharp, Version=2.6.6621.26672, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FitSharp.2.6.1\lib\net452\fitSharp.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.Cecil, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.Engine.3.8.0\lib\Mono.Cecil.dll</HintPath>
       <Private>True</Private>
@@ -74,12 +65,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="TestClass1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SQAssign1\SQAssign1.csproj">
+      <Project>{262dd43a-11eb-4eb4-85ba-c338b235334c}</Project>
+      <Name>SQAssign1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
