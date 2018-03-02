@@ -10,7 +10,7 @@ namespace SQAssign1.tests
     [TestFixture]
     public class TestClass1
     {
-        static float expectedResult;
+        static float expectedResult, actualResult;
         static Class1 c1;
 
         [SetUp]
@@ -28,21 +28,22 @@ namespace SQAssign1.tests
         [Test(Description = "Test premium")]
         public static void Test2()
         {
-            expectedResult = 0; //Dummy data, to be replaced
-            float actualResult = c1.CalcPremium(1, ""); //Dummy data, to be replaced
+            expectedResult = 5;
+            c1.setProperties(18, "female"); // setProperties method, so Class1 can be used with both Fitnesse and Nunit
+            float actualResult = c1.CalcPremium();
+            Assert.AreEqual(expectedResult, actualResult);
         }
-        [TestCase(0, "", ExpectedResult = 0)] //Dummy data, to be replaced
-        [TestCase(0, "", ExpectedResult = 0)] //Dummy data, to be replaced
-        [TestCase(0, "", ExpectedResult = 0)] //Dummy data, to be replaced
-        [TestCase(0, "", ExpectedResult = 0)] //Dummy data, to be replaced
-        [TestCase(0, "", ExpectedResult = 0)] //Dummy data, to be replaced
-        [TestCase(0, "", ExpectedResult = 0)] //Dummy data, to be replaced
+        [TestCase(17, "female", ExpectedResult = 0)]
+        [TestCase(50, "female", ExpectedResult = 0.375)]
+        [TestCase(35, "male", ExpectedResult = 6)]
+        [TestCase(36, "male", ExpectedResult = 5)]
+        [TestCase(9, "male", ExpectedResult = 0)]
+        [TestCase(31, "other", ExpectedResult = 0)]
 
-        [Test(Description = "Test out of range values")]
-        public static void Test3()
+        public float Test3(int age, string gen)
         {
-            expectedResult = 0; //Dummy data, to be replaced
-            float actualResult = c1.CalcPremium(1, "");
+            c1.setProperties(age, gen); // setProperties method, so Class1 can be used with both Fitnesse and Nunit
+            return actualResult = c1.CalcPremium();
         }
     }
 }
