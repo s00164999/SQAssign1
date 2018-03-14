@@ -11,20 +11,49 @@ namespace SQAssign1
     {
         /*  Fitnesse code:  
          
-            !define COMMAND_PATTERN {%m -r fitnesse.fitserver.FitServer,dotnet2\fit.dll %p}
-            !define TEST_RUNNER {dotnet2\Runner.exe}
-            # this is the path to the fixture code
-            !path C:\Users\harlu\Documents\Visual Studio 2017\Projects\SQAssign1\SQAssign1\bin\Debug\SQAssign1.dll
+!define COMMAND_PATTERN {%m -r fitnesse.fitserver.FitServer,dotnet2\fit.dll %p}
+!define TEST_RUNNER {dotnet2\Runner.exe}
+# this is the path to the fixture code
+!path C:\Users\harlu\Documents\Visual Studio 2017\Projects\SQAssign1\SQAssign1\bin\Debug\SQAssign1.dll
 
-            !| SQAssign1.Class1Test |
-            | age | gen | premium? |
-            | 17 | female | 0 |
-            | 18 | female | 5.0 |
-            | 31 | female | 2.5 |
-            | 50 | female | 0.375 |
-            | 35 | male | 6.0 |
-            | 36 | male | 5.0 |
-            | 31 | other | 0.0 |
+!| SQAssign1.Class1Test |
+| age | gen | premium? |
+| 15 | female | 0.0 |
+| 25 | female | 5.0 |
+| 40 | female | 2.5 |
+| 60 | female | 0.375 |
+| 17 | female | 0 |
+| 18 | female | 5 |
+| 19 | female | 5 |
+| 30 | female | 5 |
+| 31 | female | 2.5 |
+| 32 | female | 2.5 |
+| 49 | female | 2.5 |
+| 50 | female | 0.375 |
+| 51 | female | 0.375 |
+| -1 | female | 0 |
+| 105 | female | 0.375 |
+| abc | female | error |
+|   | female | error |
+| 15 | male | 0.0 |
+| 30 | male | 6.0 |
+| 40 | male | 5.0 |
+| 60 | male | 0.75 |
+| 17 | male | 0 |
+| 18 | male | 6 |
+| 19 | male | 6 |
+| 35 | male | 6 |
+| 36 | male | 5 |
+| 37 | male | 5 |
+| 49 | male | 5 |
+| 50 | male | 0.75 |
+| 51 | male | 0.75 |
+| -1 | male | 0 |
+| 105 | male | 0.75 |
+| abc | male | error |
+|   | male | error |
+| 18 | other | 0 |
+
         */
 
         public int age;
