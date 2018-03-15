@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQAssign1", "SQAssign1\SQAs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQAssign1.tests", "SQAssign1.tests\SQAssign1.tests.csproj", "{C9FA0AF3-1EC7-4315-A2B8-29B98FCF1F02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQAssign1Web", "SQAssign1Web\SQAssign1Web.csproj", "{68C98BEB-6B2A-4DF8-9766-4C9701122B57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumTests", "SeleniumTests\SeleniumTests.csproj", "{04C7047E-4204-4E67-9C1C-7F7682971D47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +25,19 @@ Global
 		{C9FA0AF3-1EC7-4315-A2B8-29B98FCF1F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9FA0AF3-1EC7-4315-A2B8-29B98FCF1F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9FA0AF3-1EC7-4315-A2B8-29B98FCF1F02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68C98BEB-6B2A-4DF8-9766-4C9701122B57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68C98BEB-6B2A-4DF8-9766-4C9701122B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68C98BEB-6B2A-4DF8-9766-4C9701122B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68C98BEB-6B2A-4DF8-9766-4C9701122B57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04C7047E-4204-4E67-9C1C-7F7682971D47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04C7047E-4204-4E67-9C1C-7F7682971D47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04C7047E-4204-4E67-9C1C-7F7682971D47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04C7047E-4204-4E67-9C1C-7F7682971D47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {203FF138-742D-4C1F-80B4-12EF8B186CB5}
 	EndGlobalSection
 EndGlobal
